@@ -1,0 +1,43 @@
+# macOS
+.DS_Store
+
+# Xcode / Swift
+DerivedData/
+.build/
+build/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+xcuserdata/
+*.moved-aside
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved.local
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+Secrets/
+secrets/
+*.p8
+*.p12
+*.mobileprovision
+*.key
+*.pem
+*.jks
+*.keystore
+
+# Infrastructure state
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Editors
+.idea/
+.vscode/
+*.swp
