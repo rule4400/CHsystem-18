@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01EE342BB06CC9E3930EF95E /* HQMonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD03665233CCD5845721EFE8 /* HQMonitorApp.swift */; };
+		08B39203D9CF46E07A1D726E /* PreviewVideoTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940F4592FD0C8B569AD82D57 /* PreviewVideoTransport.swift */; };
+		18995B8359B3AE9CEFAE94AB /* RecordingSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827327492873E83DAF133187 /* RecordingSettingsView.swift */; };
+		196E699D60A5A66B272022B2 /* SiteCameraSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1936C716C2957E7B864B0CCE /* SiteCameraSettingsView.swift */; };
+		30C56F1724617D42F42CC6B2 /* HQMonitorRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1CCA97224B5DFDB7B81EDD /* HQMonitorRootView.swift */; };
+		43EFA5331FAABDF65E424A49 /* VideoTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49664825154942AF7AADE786 /* VideoTransport.swift */; };
+		4B863D9FAE7840C9F1210493 /* SiteCameraAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577EF7976739B4AF58E7B32E /* SiteCameraAppModel.swift */; };
+		4C171D25D0386709275101B5 /* CameraCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F52DE686CBA3741A14FB0 /* CameraCaptureService.swift */; };
+		4FBCE46CB7BA4F9710D80222 /* SiteCameraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D417CB4563F6D41E6526EDD /* SiteCameraApp.swift */; };
+		6C8454FECC901BC8A44B76B8 /* MonitoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE3DF90199D0322BC5E0AC /* MonitoringView.swift */; };
+		7CF94F8861BA086DE1E4CCC2 /* CHShared in Frameworks */ = {isa = PBXBuildFile; productRef = 721263873353FF9C104D696F /* CHShared */; };
+		895BA304F1CF7B3CDEE8E296 /* PresentationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71CD3A5F59160699BFBAEEC /* PresentationModels.swift */; };
+		8AECA060C93650F85FE52F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512AC1E3B4C4466FA63811EF /* Assets.xcassets */; };
+		90064209378E6B976C1F94C1 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F667795E3C4A94B0DC12D90 /* CameraPreview.swift */; };
+		94679F4114D71C9BAF9C8942 /* ConstructionNameEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13669081A725BBAF234CC575 /* ConstructionNameEntryView.swift */; };
+		9596246D2496699F03964806 /* SiteCameraRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D71295F7F2D1C4B27A4FE /* SiteCameraRootView.swift */; };
+		9E9D4C937EF0AC49C6F9E416 /* HQMonitorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDC58A0E83798511840CF27 /* HQMonitorStore.swift */; };
+		C4016A360B470B72983A9A94 /* CHShared in Frameworks */ = {isa = PBXBuildFile; productRef = B91B5625019FADC0F79AF0B5 /* CHShared */; };
+		E58EAF0696F6187978474AFA /* CameraPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31D4FF22EA3EC22F48FDE1 /* CameraPermissionView.swift */; };
+		E91D1F7744E6BFA5520506CB /* MonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBFA531EC7D3DC5B854469C /* MonitorView.swift */; };
+		E98009345100FF3B95D45C7E /* RecordingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05BCFFAFFEFE6351F16AACC /* RecordingsView.swift */; };
+		EAE7CCE99C316C0482D0CD1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD9B5FBD19A0C97677ED980 /* Assets.xcassets */; };
+		EB08DCA7A5C381DA6A80CF10 /* SiteCameraModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10118B7740346E0033F5DCEB /* SiteCameraModels.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0AD9B5FBD19A0C97677ED980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D417CB4563F6D41E6526EDD /* SiteCameraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteCameraApp.swift; sourceTree = "<group>"; };
+		10118B7740346E0033F5DCEB /* SiteCameraModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteCameraModels.swift; sourceTree = "<group>"; };
+		13669081A725BBAF234CC575 /* ConstructionNameEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructionNameEntryView.swift; sourceTree = "<group>"; };
+		1936C716C2957E7B864B0CCE /* SiteCameraSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteCameraSettingsView.swift; sourceTree = "<group>"; };
+		28F537297BEA1F14711C287A /* HQMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HQMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49664825154942AF7AADE786 /* VideoTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTransport.swift; sourceTree = "<group>"; };
+		4D31D4FF22EA3EC22F48FDE1 /* CameraPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissionView.swift; sourceTree = "<group>"; };
+		512AC1E3B4C4466FA63811EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		577EF7976739B4AF58E7B32E /* SiteCameraAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteCameraAppModel.swift; sourceTree = "<group>"; };
+		57E0BA3F219A3D4EEB3E3C3F /* SiteCamera.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SiteCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D3B9533F76F1C35A9A36F4F /* 遠隔工事監視システム */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "遠隔工事監視システム"; path = .; sourceTree = SOURCE_ROOT; };
+		5F667795E3C4A94B0DC12D90 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		6E3D71295F7F2D1C4B27A4FE /* SiteCameraRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteCameraRootView.swift; sourceTree = "<group>"; };
+		6FDC58A0E83798511840CF27 /* HQMonitorStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HQMonitorStore.swift; sourceTree = "<group>"; };
+		827327492873E83DAF133187 /* RecordingSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingSettingsView.swift; sourceTree = "<group>"; };
+		8FBE3DF90199D0322BC5E0AC /* MonitoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringView.swift; sourceTree = "<group>"; };
+		940F4592FD0C8B569AD82D57 /* PreviewVideoTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewVideoTransport.swift; sourceTree = "<group>"; };
+		9CBFA531EC7D3DC5B854469C /* MonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorView.swift; sourceTree = "<group>"; };
+		C71CD3A5F59160699BFBAEEC /* PresentationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationModels.swift; sourceTree = "<group>"; };
+		CD1CCA97224B5DFDB7B81EDD /* HQMonitorRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HQMonitorRootView.swift; sourceTree = "<group>"; };
+		F05BCFFAFFEFE6351F16AACC /* RecordingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsView.swift; sourceTree = "<group>"; };
+		FA1F52DE686CBA3741A14FB0 /* CameraCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureService.swift; sourceTree = "<group>"; };
+		FD03665233CCD5845721EFE8 /* HQMonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HQMonitorApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F394F680086A7485CA176597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF94F8861BA086DE1E4CCC2 /* CHShared in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75F5323472CE49DFF625B7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4016A360B470B72983A9A94 /* CHShared in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		062B4A39EF3AB35E522E5B96 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0D417CB4563F6D41E6526EDD /* SiteCameraApp.swift */,
+				577EF7976739B4AF58E7B32E /* SiteCameraAppModel.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		10F8A7708BEF4D7395A2D525 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D31D4FF22EA3EC22F48FDE1 /* CameraPermissionView.swift */,
+				5F667795E3C4A94B0DC12D90 /* CameraPreview.swift */,
+				13669081A725BBAF234CC575 /* ConstructionNameEntryView.swift */,
+				8FBE3DF90199D0322BC5E0AC /* MonitoringView.swift */,
+				6E3D71295F7F2D1C4B27A4FE /* SiteCameraRootView.swift */,
+				1936C716C2957E7B864B0CCE /* SiteCameraSettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1EE10EFD8D3215E112B43462 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				6CA317DC3DB23579D5DA1B35 /* HQMonitor */,
+				F7C1489D58217C2C84D9186E /* SiteCamera */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		22A1986BCE40F83FD8C7E2B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				512AC1E3B4C4466FA63811EF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		57EA0F7718F17C1E1A1570EC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA1F52DE686CBA3741A14FB0 /* CameraCaptureService.swift */,
+				940F4592FD0C8B569AD82D57 /* PreviewVideoTransport.swift */,
+				49664825154942AF7AADE786 /* VideoTransport.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6CA317DC3DB23579D5DA1B35 /* HQMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				22A1986BCE40F83FD8C7E2B0 /* Resources */,
+				FD03665233CCD5845721EFE8 /* HQMonitorApp.swift */,
+				CD1CCA97224B5DFDB7B81EDD /* HQMonitorRootView.swift */,
+				6FDC58A0E83798511840CF27 /* HQMonitorStore.swift */,
+				9CBFA531EC7D3DC5B854469C /* MonitorView.swift */,
+				C71CD3A5F59160699BFBAEEC /* PresentationModels.swift */,
+				827327492873E83DAF133187 /* RecordingSettingsView.swift */,
+				F05BCFFAFFEFE6351F16AACC /* RecordingsView.swift */,
+			);
+			path = HQMonitor;
+			sourceTree = "<group>";
+		};
+		76DA2CAB09BB7016BB5B8173 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28F537297BEA1F14711C287A /* HQMonitor.app */,
+				57E0BA3F219A3D4EEB3E3C3F /* SiteCamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		770983606B3856FEC0A0F0B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				10118B7740346E0033F5DCEB /* SiteCameraModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C5EA06029342B2332ED21C73 = {
+			isa = PBXGroup;
+			children = (
+				1EE10EFD8D3215E112B43462 /* Apps */,
+				E4323D5B48AD53864111E7EB /* Packages */,
+				76DA2CAB09BB7016BB5B8173 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4323D5B48AD53864111E7EB /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				5D3B9533F76F1C35A9A36F4F /* 遠隔工事監視システム */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		E580AFA9BB488780F6DA18B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0AD9B5FBD19A0C97677ED980 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F7C1489D58217C2C84D9186E /* SiteCamera */ = {
+			isa = PBXGroup;
+			children = (
+				062B4A39EF3AB35E522E5B96 /* App */,
+				770983606B3856FEC0A0F0B3 /* Models */,
+				E580AFA9BB488780F6DA18B5 /* Resources */,
+				57EA0F7718F17C1E1A1570EC /* Services */,
+				10F8A7708BEF4D7395A2D525 /* Views */,
+			);
+			path = SiteCamera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		450067DC0ED3EA7134E5CE86 /* SiteCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C544DB997BDA73692C6D38A /* Build configuration list for PBXNativeTarget "SiteCamera" */;
+			buildPhases = (
+				B2C282DB869ED41C54C7F2E4 /* Sources */,
+				D593080A98E2E477DE926F6F /* Resources */,
+				F394F680086A7485CA176597 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiteCamera;
+			packageProductDependencies = (
+				721263873353FF9C104D696F /* CHShared */,
+			);
+			productName = SiteCamera;
+			productReference = 57E0BA3F219A3D4EEB3E3C3F /* SiteCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58A533E6311FA45B2935FB88 /* HQMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B1A03B1F1A632109FBFD056 /* Build configuration list for PBXNativeTarget "HQMonitor" */;
+			buildPhases = (
+				98146448EB3BA6BC7805AB6E /* Sources */,
+				E7508A12F3031888F0995637 /* Resources */,
+				F75F5323472CE49DFF625B7A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HQMonitor;
+			packageProductDependencies = (
+				B91B5625019FADC0F79AF0B5 /* CHShared */,
+			);
+			productName = HQMonitor;
+			productReference = 28F537297BEA1F14711C287A /* HQMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F54A3FBC79275CB8042B2424 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					450067DC0ED3EA7134E5CE86 = {
+						ProvisioningStyle = Automatic;
+					};
+					58A533E6311FA45B2935FB88 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EEAA1490CDD1E29B4946367E /* Build configuration list for PBXProject "CHRemoteMonitor" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C5EA06029342B2332ED21C73;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				37A6ACABBF1AC66B3424F402 /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 76DA2CAB09BB7016BB5B8173 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58A533E6311FA45B2935FB88 /* HQMonitor */,
+				450067DC0ED3EA7134E5CE86 /* SiteCamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D593080A98E2E477DE926F6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE7CCE99C316C0482D0CD1C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7508A12F3031888F0995637 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AECA060C93650F85FE52F80 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98146448EB3BA6BC7805AB6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EE342BB06CC9E3930EF95E /* HQMonitorApp.swift in Sources */,
+				30C56F1724617D42F42CC6B2 /* HQMonitorRootView.swift in Sources */,
+				9E9D4C937EF0AC49C6F9E416 /* HQMonitorStore.swift in Sources */,
+				E91D1F7744E6BFA5520506CB /* MonitorView.swift in Sources */,
+				895BA304F1CF7B3CDEE8E296 /* PresentationModels.swift in Sources */,
+				18995B8359B3AE9CEFAE94AB /* RecordingSettingsView.swift in Sources */,
+				E98009345100FF3B95D45C7E /* RecordingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2C282DB869ED41C54C7F2E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C171D25D0386709275101B5 /* CameraCaptureService.swift in Sources */,
+				E58EAF0696F6187978474AFA /* CameraPermissionView.swift in Sources */,
+				90064209378E6B976C1F94C1 /* CameraPreview.swift in Sources */,
+				94679F4114D71C9BAF9C8942 /* ConstructionNameEntryView.swift in Sources */,
+				6C8454FECC901BC8A44B76B8 /* MonitoringView.swift in Sources */,
+				08B39203D9CF46E07A1D726E /* PreviewVideoTransport.swift in Sources */,
+				4FBCE46CB7BA4F9710D80222 /* SiteCameraApp.swift in Sources */,
+				4B863D9FAE7840C9F1210493 /* SiteCameraAppModel.swift in Sources */,
+				EB08DCA7A5C381DA6A80CF10 /* SiteCameraModels.swift in Sources */,
+				9596246D2496699F03964806 /* SiteCameraRootView.swift in Sources */,
+				196E699D60A5A66B272022B2 /* SiteCameraSettingsView.swift in Sources */,
+				43EFA5331FAABDF65E424A49 /* VideoTransport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		38C00944429901FE19C9FB10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Apps/SiteCamera/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rule4400.chsystem18.sitecamera;
+				PRODUCT_NAME = SiteCamera;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E90B1294BF0D986FD08A69B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		7120830357AEED946DD3F053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Apps/HQMonitor/Resources/HQMonitor.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/HQMonitor/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rule4400.chsystem18.hqmonitor;
+				PRODUCT_NAME = HQMonitor;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AA081F657A3F5A9CE56D7E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Apps/SiteCamera/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rule4400.chsystem18.sitecamera;
+				PRODUCT_NAME = SiteCamera;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AEF1B27246F65B8F5564FD45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Apps/HQMonitor/Resources/HQMonitor.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/HQMonitor/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rule4400.chsystem18.hqmonitor;
+				PRODUCT_NAME = HQMonitor;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C130D9C0BF63BDAE0D1034E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B1A03B1F1A632109FBFD056 /* Build configuration list for PBXNativeTarget "HQMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7120830357AEED946DD3F053 /* Debug */,
+				AEF1B27246F65B8F5564FD45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9C544DB997BDA73692C6D38A /* Build configuration list for PBXNativeTarget "SiteCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38C00944429901FE19C9FB10 /* Debug */,
+				AA081F657A3F5A9CE56D7E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EEAA1490CDD1E29B4946367E /* Build configuration list for PBXProject "CHRemoteMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E90B1294BF0D986FD08A69B /* Debug */,
+				C130D9C0BF63BDAE0D1034E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		37A6ACABBF1AC66B3424F402 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		721263873353FF9C104D696F /* CHShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CHShared;
+		};
+		B91B5625019FADC0F79AF0B5 /* CHShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CHShared;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F54A3FBC79275CB8042B2424 /* Project object */;
+}

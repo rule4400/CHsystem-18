@@ -1,8 +1,8 @@
 # 遠隔工事監視システム
 
-工事現場の iPhone から本部の Mac へ映像をリアルタイム伝送し、最大 25 現場をタイル表示・録画するシステムの設計資料です。
+工事現場の iPhone から本部の Mac へ映像をリアルタイム伝送し、最大 25 現場をタイル表示・録画するシステムです。
 
-現在は **基本設計フェーズ（v0.1）** です。アプリケーションの実装コードはまだ含みません。
+現在は **動作プロトタイプ（v0.2）** です。iOS の実カメラ画面、本部 macOS の 25 タイル監視・録画検索・保存設定、両アプリの共有モデルとテストを実装しています。WebRTC、認証、制御 API、中央録画サービスはモック境界までで、実サーバーにはまだ接続していません。
 
 正本リポジトリ: [rule4400/CHsystem-18](https://github.com/rule4400/CHsystem-18)
 
@@ -12,6 +12,85 @@
 - [API・イベント設計書](docs/02_API・イベント設計書.md)
 - [運用・試験設計書](docs/03_運用・試験設計書.md)
 - [UI設計書](docs/04_UI設計書.md)
+- [実装状況・起動手順](docs/05_実装状況・起動手順.md)
+
+## 実装済みの範囲
+
+### 現場用 iOS アプリ `SiteCamera`
+
+- 初回起動時の工事名称登録と端末内保存
+- カメラ権限の事前説明と権限エラー案内
+- AVFoundation を使用した背面カメラの実プレビュー
+- 配信中、接続中、再接続、オフライン、熱保護、カメラ利用不可の状態表示
+- 設定画面からの工事名称変更
+- 画質指示、再接続、最終送信時刻を確認できる模擬伝送層
+- アクティブ中の自動ロック抑止と、バックグラウンド移行時の安全な停止
+
+### 本部用 macOS アプリ `HQMonitor`
+
+- 1、4、9、16、25 タイル表示。各タイルは 16:9
+- 左下の工事名称、右下の撮影時刻、接続・録画状態の表示
+- 停止映像の暗転、撮影時刻固定、最終受信時刻の明示
+- 現場インスペクターと希望・適用・実測画質の分離表示
+- 画質変更と録画開始・停止の模擬 ACK 状態遷移
+- 録画検索、欠落区間付きタイムライン、再生画面
+- 保存期間、容量表示、保存期間短縮時の削除影響確認
+
+### 共有層 `CHShared`
+
+- 品質、接続、録画、現場、録画欠落の共通モデル
+- 1〜80 文字の工事名称検証
+- 重複・範囲外を補正する欠落時間と録画カバレッジ計算
+- 19 件の単体テスト
+
+## 開発環境と起動
+
+検証済み環境は Xcode 26.6、Swift 6.3.3、XcodeGen 2.45.4 です。アプリの Deployment Target は iOS 18、macOS 15 です。
+
+```bash
+brew install xcodegen
+make project
+open CHRemoteMonitor.xcodeproj
+```
+
+Xcode では次の Scheme を選択します。
+
+- `SiteCamera`: iPhone または iOS Simulator
+- `HQMonitor`: My Mac
+
+コマンドラインですべて検証する場合は次を実行します。
+
+```bash
+make verify
+```
+
+`make verify` は共有テスト、iOS Simulator 向けビルド、署名なし macOS ビルドを実行します。iPhone 実機へ入れる場合は、Xcode で開発チームと実運用用 Bundle Identifier を設定してください。
+
+`project.yml`をXcodeプロジェクト設定の正本とします。`CHRemoteMonitor.xcodeproj`、`Info.plist`、entitlementsはXcodeGen生成物で、直接編集しません。
+
+## ソース構成
+
+```text
+Apps/
+  SiteCamera/       現場用iOSアプリ
+  HQMonitor/        本部用macOSアプリ
+Shared/             両アプリの共有モデル・計算
+Tests/CHSharedTests 共有層の単体テスト
+docs/               設計・運用・実装資料
+Package.swift       共有Swift Package
+project.yml         XcodeGen設定の正本
+```
+
+## 現段階で未接続の機能
+
+- iPhoneから本部へのWebRTC映像伝送
+- TURN/SFUと制御WebSocket
+- 端末登録、利用者ログイン、認証・認可
+- 中央録画ファイルの生成、検索API、削除ジョブ
+- 実iPhoneをMDMのSingle App Modeで24時間運用する設定
+- アプリ署名、配布、App Icon、実環境監視
+
+現在のUI操作は、実サービス接続前でも安全な状態遷移を確認できるようにモック実装されています。次工程では、`VideoTransport`と`HQMonitorStore`のサービス境界を実API/WebRTC実装へ差し替えます。
 
 ## 設計上の結論
 
